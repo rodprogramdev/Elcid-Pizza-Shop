@@ -1,0 +1,239 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    /*font-family: 'Roboto', sans-serif;
+    font-family: 'Sevillana', cursive;
+    font-family: 'Cabin', sans-serif;*/
+    font-family: 'Playfair Display', serif;
+    
+}
+.header{
+   background-image: url(emy-90710FOygrg-unsplash.jpg); /*
+   <span>Photo by <a href="https://unsplash.com/@grimnoire?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">emy</a> on <a href="https://unsplash.com/s/
+   photos/pastry?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+   */
+   background-size: cover;
+   height: 100vh;
+   color:#fff;
+   position: relative;
+   
+}
+
+nav.clearfix{
+    background-color: rgba(30, 39, 43, 0.822);
+    height: 10vh;
+    content:'';
+    display: table;
+    clear:both;
+    width: 100%;
+    /*padding: 10px;*/
+    
+}
+
+.header__logo{
+ float:left;
+ padding: 10px;
+ margin: 20px;
+ font-size: 30px;
+}
+
+.header__nav{
+float: right;
+
+}
+
+ul{
+   
+   list-style-type:none;
+}
+
+li{
+    display:inline-block;
+    padding: 10px;
+    font-size: 30px;
+    margin: 15px;
+}
+
+/*Section Services*/
+
+.services{
+    /*background-color: green;*/
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 20px;
+    font-size: 20px;
+}
+
+.heading{
+    background-color:rgba(20, 14, 14, 0.699);
+    border-radius: 20px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    font-size: 1.8rem;
+    text-align:center;
+
+}
+
+.services__description{
+    margin-left:100px;
+    margin-bottom: 10px;
+}
+
+img{
+    height: 400px;
+    width: 350px;
+    margin: 100px;
+    border-radius: 20px;
+
+}
+
+footer{
+    background-color: rgba(30, 39, 43, 0.822);
+    height: 50vh;
+    color:white;
+    font-size: 20px;
+   
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+table{
+    display: inline-block;
+    
+    margin-left: 10px;
+}
+
+th{
+    padding: 30px;
+    
+}
+
+td{
+    padding-right: 20px;
+    padding-left: 30px;
+    text-align: left;
+}
+
+.orders{
+    background-color: red;
+    color:white;
+    text-decoration:none;
+    margin-top: 20px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.footer-credits{
+    text-align:center;
+    margin-top: 90px;
+    
+    font-family: 'Sevillana', cursive;
+    font-family: serif;
+}
+
+.footer-credits2{
+    text-align:center;
+    margin-top: 5px;
+    
+    font-family: 'Sevillana', cursive;
+    font-family: serif;
+}
+
+
+
+.popup{
+   background-color: rgba(49, 33, 33, 0.747);
+    height: 100vh;
+    width: 100%;
+    padding: 50px;
+    position:fixed;
+    top:0;
+    left:0;
+opacity: 0;
+visibility: hidden;
+transition: all .3s;
+
+}
+
+
+
+
+
+.popup__box{
+    background-image: url(emy-90710FOygrg-unsplash.jpg);
+    background-size: cover;
+    position:absolute;
+    top:50%;
+    left: 50%;
+    /*height: 50vh;
+    width: 100vh;*/
+    width: 70%;
+    height: 25rem;
+    background-color: white;
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(.5);
+    box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.562);
+    border-radius: 30px;
+    text-align:center;
+    padding: 50px;
+    color: white;
+    transition: all .4s .2s;
+   
+    
+}
+/*Open States*/
+#popup:target{
+    opacity:1;
+    visibility: visible;
+}
+
+#popup:target .popup__box{
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+    
+    
+}
+
+
+.popup__close:link, .popup__close:visited{
+    color: white;
+    position: absolute;
+    top:1rem;
+    right:2.5rem;
+    font-size: 3rem;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.popup__close:hover{
+    color: red;
+    font-weight: 400;
+}
+
+form{
+    margin: 10px;
+    /*font-family: 'Cabin', sans-serif;*/
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+}
+
+.customer__name{
+    width: 200px;
+    height: 25px;
+    border-radius: 5px;
+}
+.instructions{
+    height: 100px;
+    width: 400px;
+    border-radius:30px;
+    
+}
